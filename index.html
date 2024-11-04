@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook P2-M12</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { width: 95%; margin: auto; }
+        .dropdown { margin-bottom: 20px; }
+        .time-title, .level-title { font-size: 1.2em; font-weight: bold; }
+        .activity { margin-bottom: 30px; }
+        .banner { background-color: #4CAF50; color: white; padding: 10px; cursor: pointer; }
+        .title { font-weight: bold; }
+        .subtitle { font-style: italic; }
+        .content { display: none; padding: 10px; border: 1px solid #ddd; }
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 8px; border: 1px solid #ddd; vertical-align: top; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Playbook P2-M12</h1>
+        
+        <div class="dropdown">
+            <label for="class-time">Tiempo efectivo de Clase:</label>
+            <select id="class-time" onchange="updateContent()">
+                <option value="50">50 minutos</option>
+                <option value="45">45 minutos</option>
+                <option value="40">40 minutos</option>
+            </select>
+        </div>
+        
+        <h2 id="selected-time" class="time-title">Tiempo efectivo de clase: 50 minutos</h2>
+
+        <!-- Inicio de Actividad 0 -->
+        <div id="activity-0" class="activity">
+            <div class="banner" onclick="toggleContent('revision_mision')">
+                <div class="title">📚 Actividad 0: Revisión de Misión ⏰ Tiempo: No especificado</div>
+                <div class="subtitle">Verificar que los dispositivos están conectados, con acceso a internet, y que CODE.org está abierto en la lección "Fiesta de Baile Edición IA".</div>
+            </div>
+            <div id="revision_mision" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (No especificado):</strong> Verificar que los dispositivos están conectados, con acceso a internet, y que CODE.org está abierto en la lección "Fiesta de Baile Edición IA". Confirmar que los estudiantes tienen sus Magic Boards o pizarras y cualquier otro material necesario para la actividad.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> No se utiliza diálogo con los estudiantes en esta etapa.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Actividad 1 -->
+        <div id="activity-1" class="activity">
+            <div class="banner" onclick="toggleContent('saludo_ritual')">
+                <div class="title">🎉 Actividad 1: Saludo y Ritual Gnius Club ⏰ Tiempo: 2.5 minutos</div>
+                <div class="subtitle">Dar la bienvenida a los estudiantes y prepararlos para la misión del día.</div>
+            </div>
+            <div id="saludo_ritual" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 2 con el logotipo de Gnius Club y el tema de baile.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “¡Hola, Genios! 🌟 ¿Están listos para una aventura de baile y programación? Hoy vamos a crear nuestras propias coreografías con ayuda de la inteligencia artificial. ¡Va a ser una clase llena de ritmo y creatividad!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (1 minuto):</strong> Proyectar Diapositiva 3 con poses de baile para medir el estado de ánimo.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Antes de empezar, quiero ver cómo están de ánimo para esta fiesta de baile. Si se sienten súper emocionados, levanten las manos y hagan un paso de baile. Si están un poco tranquilos o necesitan energía, pónganse en pose de descanso cruzando los brazos. ¡Recuerden que juntos nos llenaremos de ritmo y diversión!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 3 (0.5 minutos):</strong> Proyectar Diapositiva 4 con la animación del ritual.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Juntamos nuestras manos y decimos: ‘¡Gracias por estar aquí, Genios! Hoy será un día lleno de creatividad, diversión y baile. ¡Vamos a movernos y aprender a programar juntos!’”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 4 (0.5 minutos):</strong> Proyectar Diapositiva 5 con los objetivos de la misión.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Hoy tenemos dos grandes objetivos: <br><br>1. Aprender a programar una coreografía de baile con bloques de código usando IA en CODE.org. <br><br>2. Crear y compartir nuestras coreografías para inspirarnos y divertirnos en equipo. ¡Va a ser épico!”</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Actividad 2 -->
+        <div id="activity-2" class="activity">
+            <div class="banner" onclick="toggleContent('brain_vitamin')">
+                <div class="title">🧠 Actividad 2: Brain Vitamin ⏰ Tiempo: 1.5 minutos</div>
+                <div class="subtitle">Activar los cuerpos y mentes de los estudiantes con una rutina de gimnasia cerebral.</div>
+            </div>
+            <div id="brain_vitamin" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 6 "Gimnasia Cerebral de Baile".</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “¡Genios! Antes de lanzarnos a programar nuestros bailes, vamos a activar nuestros cuerpos y mentes con un poco de ‘gimnasia cerebral de baile’. Prepárense para moverse y entrar en ritmo, ¡como verdaderos programadores de baile!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (1 minuto):</strong> Proyectar Diapositiva 7 con una secuencia de pasos de baile sencilla.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Vamos a hacer una pequeña coreografía juntos para entender cómo funcionan las secuencias. Primero, levantamos el brazo derecho, luego el brazo izquierdo, y finalmente damos un giro. ¡Repitamos! Esto es como programar los pasos de un baile en una secuencia de código.”</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Actividad 3 -->
+        <div id="activity-3" class="activity">
+            <div class="banner" onclick="toggleContent('challenge')">
+                <div class="title">💻 Actividad 3: Challenge ⏰ Tiempo: 30 minutos</div>
+                <div class="subtitle">Desafiar a los estudiantes a crear coreografías programadas en CODE.org.</div>
+            </div>
+            <div id="challenge" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 8: Portada del Challenge.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “¡Genios! Es el momento de llevar su creatividad al máximo. Ahora cada uno de ustedes podrá crear una coreografía utilizando programación en CODE.org. ¿Listos para hacer bailar a sus personajes al ritmo de sus ideas? ¡A programar esos pasos!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (0.5 minutos):</strong> Proyectar Diapositiva 9: Explicación de los niveles de desafío.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Pueden elegir entre tres niveles de desafío, pero todos deben completar cada nivel de la lección ‘Fiesta de Baile Edición IA’ en CODE.org:
+                            <br><br> 
+                            Rookie: Completen todos los niveles de la lección creando una coreografía básica con movimientos sencillos.
+                            <br><br>
+                            Master: Completen todos los niveles e incluyan movimientos sincronizados con la música, personalizando algunos pasos.
+                            <br><br>
+                            Hacker: Completen todos los niveles creando una coreografía que impresione con efectos avanzados, ¡sin usar pistas! 
+                            <br><br>
+                            Recuerden que cada nivel es una oportunidad para aprender algo nuevo y ser aún más creativos.”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 3 (20 minutos):</strong> Proyectar Diapositiva 10: Temporizador de 20 minutos para desarrollar las coreografías.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Tienen 20 minutos para programar su coreografía en CODE.org. Recuerden que deben completar todos los niveles de la lección y pueden experimentar y probar diferentes pasos. ¡Es su momento de hacer brillar sus ideas en la pista de baile digital!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 4 (5 minutos):</strong> Proyectar Diapositiva 11: Temporizador de 5 minutos para prueba y ajuste del código.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Ahora que sus coreografías están listas, es momento de probar y ajustar. ¡Asegúrense de que todo fluya al ritmo que planearon!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 5 (2 minutos):</strong> Proyectar Diapositiva 12: Preguntas de reflexión sobre los desafíos.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “¡Gran trabajo, genios! Reflexionemos juntos: ¿Cuál fue la parte más divertida de crear su coreografía? ¿Tuvieron algún reto? ¿Cómo lograron resolverlo? ¡Cada coreografía tiene una historia detrás, y queremos escucharla!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 6 (2 minutos):</strong> Proyectar Diapositiva 13: Revisión de los objetivos de la clase.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Genios, revisemos nuestros objetivos: 1. ¿Logramos crear una coreografía usando bloques de código e IA en CODE.org? 2. ¿Logramos compartir y aprender de las coreografías de nuestros compañeros? ¡Estoy seguro de que todos lo hicieron de maravilla!”</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Actividad 4 -->
+        <div id="activity-4" class="activity">
+            <div class="banner" onclick="toggleContent('team_gnius')">
+                <div class="title">🤝 Actividad 4: Team Gnius ⏰ Tiempo: 12 minutos</div>
+                <div class="subtitle">Fomentar el trabajo en equipo y la colaboración entre los estudiantes.</div>
+            </div>
+            <div id="team_gnius" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 14: Instrucción para formar equipos.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “¡Genios! Ahora, vamos a reunirnos en equipos de 2 o 3 para compartir nuestras experiencias. ¡Cada coreografía tiene una historia y queremos escuchar cómo la crearon! ¡Es momento de trabajar juntos y aprender de nuestros compañeros!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (0.5 minutos):</strong> Proyectar Diapositiva 15: Temporizador de 30 segundos para hacer equipos.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Tienen 30 segundos para encontrar a su equipo. ¡Rápido, genios! Busquen a sus compañeros y prepárense para compartir sus ideas.”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 3 (4 minutos):</strong> Proyectar Diapositiva 16: Instrucción del método Think-Pair-Share.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Vamos a usar el método Think-Pair-Share. Primero, piensen en lo que aprendieron al crear su coreografía y cómo lo aplicarán en otros proyectos. Luego, compartan con su equipo. ¡Es su momento de brillar y aprender de los demás!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 4 (5 minutos):</strong> Proyectar Diapositiva 17: Metodología de trabajo colaborativo.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Ahora trabajen juntos para organizar lo que aprendieron y propongan cómo podrían mejorar sus coreografías o crear algo nuevo la próxima vez. ¡Pongan en práctica su creatividad y sus habilidades de programación!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 5 (2 minutos):</strong> Proyectar Diapositiva 18: Revisión final de la colaboración en equipo.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Finalmente, reflexionemos juntos: ¿Qué aprendimos sobre la importancia de colaborar y compartir ideas? ¿Cómo podríamos mejorar en futuros desafíos? ¡Recuerden, trabajar en equipo nos hace mejores!”</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Actividad 5 -->
+        <div id="activity-5" class="activity">
+            <div class="banner" onclick="toggleContent('honor_dojo')">
+                <div class="title">🏅 Actividad 5: Honor de Dojo ⏰ Tiempo: 3 minutos</div>
+                <div class="subtitle">Cierre de la clase y revisión de los objetivos alcanzados.</div>
+            </div>
+            <div id="honor_dojo" class="content">
+                <table>
+                    <tr>
+                        <td><strong>PASO 1 (1 minuto):</strong> Proyectar Diapositiva 19: Revisión de los objetivos de la clase.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Genios, vamos a revisar los objetivos de nuestra misión de hoy: 1. ¿Logramos programar una coreografía usando IA en CODE.org? 2. ¿Trabajamos en equipo y compartimos nuestras ideas? ¡Estoy muy orgulloso del esfuerzo de todos!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 2 (0.5 minutos):</strong> Felicitar a los estudiantes por su participación y esfuerzo, sin destacar a individuos.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Hoy, todos trabajaron increíblemente bien, programaron sus coreografías y colaboraron como un verdadero equipo de genios. ¡Felicitaciones a todos por su creatividad y esfuerzo!”</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PASO 3 (1.5 minutos):</strong> Proyectar Diapositiva 20 “Honrar el Espacio”. Dar instrucciones para recoger los materiales utilizados.</td>
+                        <td><strong>DIÁLOGO SUGERIDO:</strong> “Ahora, como parte de nuestro Honor de Dojo, vamos a respetar nuestro espacio. Por favor, recojan todos los materiales y asegúrense de dejar el salón en orden. ¡Así demostramos respeto por nuestro entorno y por el trabajo de todos!”</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+

@@ -192,3 +192,23 @@
             </div>
         </div>
 
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            content.style.display = (content.style.display === "block") ? "none" : "block";
+        }
+
+        function updateContent() {
+            var time = document.getElementById("class-time").value;
+            document.getElementById("selected-time").innerText = "Tiempo efectivo de clase: " + time + " minutos";
+
+            // Ajustes de visibilidad de actividades según el tiempo seleccionado
+            document.getElementById("activity-4").style.display = (time === "50") ? "block" : "none";
+            document.getElementById("activity-2").style.display = (time === "50" || time === "45") ? "block" : "none";
+        }
+
+        // Inicializar el contenido según la selección por defecto
+        updateContent();
+    </script>
+</body>
+</html>
